@@ -25,10 +25,12 @@ Rules:
 | hero / slam | Anton 400 | Huge condensed caps; one word or short phrase per beat |
 | tile / wordmark | Inter 900 | Split-flap tile letters, wordmarks |
 | body | Inter 500 | Rare plain lines |
-| serif accent | Cormorant Garamond 400/700, `font-style: italic` (synthesised) | One accent line per scene, sentence case, ends in a ✳ |
+| serif accent | Cormorant Garamond 400/700, `font-style: italic` (synthesised) | One accent line per scene, sentence case, no trailing mark |
 | mono | JetBrains Mono 400/700 | Labels, chapter tags, typed answers, counters; uppercase, tracked 0.16–0.18em |
 
-The fonts don't include ■, ↳ or ✳. Draw them as small shapes or inline SVG.
+The fonts don't include ■ or ↳. Draw them as small shapes or inline SVG.
+
+**Never end lines with an asterisk, sparkle or starburst mark.** A small orange ✳ after a serif line reads as the Claude / Anthropic logo, so it was removed after user feedback.
 
 ## Signature components
 

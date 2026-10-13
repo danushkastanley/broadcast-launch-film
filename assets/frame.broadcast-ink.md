@@ -62,7 +62,7 @@ components:
     look: "a 3–4px signal-orange line"
     motion: "draws left→right on a beat (scaleX 0→1, transform-origin left, expo.out 0.35s)"
   serif-accent-line:
-    look: "Cormorant Garamond italic, accent colour on ink or text-ink on paper, sentence case, ends with a small orange ✳ asterisk glyph"
+    look: "Cormorant Garamond italic, accent colour on ink or text-ink on paper, sentence case, no trailing mark (never an asterisk or sparkle: it reads as a third-party logo)"
     motion: "types on character by character (~28ms/char) or rises 30px with opacity"
   mono-tag:
     look: "mono-label in a 1px muted outline box or with a leading ■ square"
@@ -87,7 +87,7 @@ atmosphere:
 The launch film looks like a late-night broadcast title sequence: big condensed type cut hard to the
 kick drum, split-flap boards, outline echoes and glitches, all framed by a quiet HUD and film grain.
 
-- **One accent.** The accent colour carries every emphasis: the one key word, the rule, the ✳, the
+- **One accent.** The accent colour carries every emphasis: the one key word, the rule, the
   highlight. Never two accent things competing in one moment. On paper, use the darker paper-accent.
 - **Two grounds.** Ink is the default; paper acts invert the palette for punch. The root HUD and
   grain sit above both and adapt automatically. Frames never draw corner brackets, metadata rows,

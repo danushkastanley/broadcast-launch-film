@@ -67,7 +67,7 @@ Scene 2 (0.938–2.813s): …
 - Never tween letterSpacing. Deterministic everything (indices/time, never Math.random). No CSS animation.
   Entrances use fromTo. No back/elastic/bounce eases.
 - Split-flap tiles, echo type, glitch-cut, accent-rule, serif-accent-line and the brand mark are components in
-  frame.md: follow those recipes. Fonts lack ■ ↳ ✳: draw them.
+  frame.md: follow those recipes. Fonts lack ■ ↳: draw them. Never add an asterisk/sparkle mark after lines.
 ```
 
 Dispatch prompt per worker: read `_role.md`, `_film-context.md` (these notes override generic role defaults), `frame.md`, then the packet(s). Give PROJECT_DIR, frame ids and output paths, canvas and "Captions: disabled". Ask the worker to seek its frame in headless Chrome to verify beat hits and the zone. Writing the file is its terminal action.
