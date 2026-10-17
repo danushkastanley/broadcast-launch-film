@@ -15,6 +15,15 @@ A [Claude Code](https://claude.com/claude-code) skill that makes a cinematic, br
 - **Timing:** every scene starts exactly on a beat; the brand lands on the drop and the logo on the final hit.
 - **Output:** renders at **60fps** by default, in 9:16, 16:9, 1:1 or 4:5.
 
+### Four more looks (no HUD)
+
+- **Pop Flash:** a loud, flashing, multi-colour hype reel with giant type, split panels and marquee bands. Photosensitivity-safe, with at most one full-screen change per beat.
+- **The product performs:** a calm, premium film where true-size product UI is operated by a pointer. Art direction comes from `design-taste-frontend`.
+- **Gym physical:** a metaphor made physical (barbell, plates, chalk, LED counter).
+- **Fitness app:** the same metaphor told through premium app UI: activity rings, pickers, toggles, live graphs.
+
+Any approved film can be recut for another aspect ratio (for example 9:16 to 16:9 for LinkedIn) with the same timing and sound.
+
 ## Install
 
 The skill builds on the [HyperFrames](https://hyperframes.heygen.com) skills and CLI. Install those
@@ -59,12 +68,14 @@ about 60s, ink and signal orange, music with SFX, no voice. Then it:
 | Path | What it is |
 |---|---|
 | `SKILL.md` | The workflow Claude follows |
-| `references/` | Design system, story arc and scene grammar, SFX placement, QA gotchas |
+| `references/` | Looks, design system, story arc and scene grammar, SFX placement, QA gotchas |
 | `assets/frame.broadcast-ink.md` | Design spec template: palette, type roles, components, motion rules |
+| `assets/frame.{pop-flash,product-performs,gym-physical,fitness-app}.md` | Templates for the four no-HUD looks (placeholder colours to remap) |
 | `assets/chrome.template.html` | The HUD and film-grain overlay |
 | `assets/fonts/` | Anton, Inter, Cormorant Garamond, JetBrains Mono (SIL OFL 1.1, licences included) |
 | `scripts/music.mjs` | Search and download tracks from the HeyGen music library |
 | `scripts/music-grid.mjs` | Beat grid, BPM and section map for a track |
+| `scripts/music-bands.mjs` / `kick-grid.mjs` / `music-env.mjs` | Low/high-band section map, exact kick-fitted beat grid, and a 10 ms envelope to pin a hit or a stop |
 | `scripts/make-chrome.mjs` / `mount-chrome.mjs` | Generate the HUD from `film.json` and mount it over every scene at the film's fps |
 | `scripts/text-audit.mjs` | Seek the whole film and flag text outside the safe zone |
 | `scripts/deliver.sh` | Optional upload copy: capped bitrate, −14 LUFS |
